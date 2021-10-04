@@ -90,4 +90,8 @@ export default {
   width: 100vh; 
   height:100%; 
 }
+
+h1 {
+  margin-left:5px; 
+}
 </style>
