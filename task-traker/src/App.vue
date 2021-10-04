@@ -94,4 +94,11 @@ export default {
 h1 {
   margin-left:5px; 
 }
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size:24px;
+  }
+
+}  
 </style>
