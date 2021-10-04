@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-  <Header @toggle-add-task="toggleAddTask" title="Task Tracker" />
+  <Header @toggle-add-task="toggleAddTask" title="Task Tracker" :showAddTask="showAddTask"/>
   <div v-show="showAddTask">
   <AddTask @add-task="addTask" />
   </div>
@@ -79,6 +79,8 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  display: flex;
+  justify-content: center;
   color: #2c3e50;
   margin-top: 60px;
 }
@@ -86,6 +88,6 @@ export default {
 .container {
   border: 1px solid blue; 
   width: 100vh; 
-  height:100vh; 
+  height:100%; 
 }
 </style>

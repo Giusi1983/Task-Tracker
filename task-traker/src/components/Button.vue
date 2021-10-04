@@ -12,8 +12,16 @@ export default {
   }, 
   methods: {
     onClick() {
-      this.$emit('toggle-add-task')
+      this.$emit('btn-click')
     },
   }
 }
 </script>
+
+<style scoped>
+.btn {
+  width: 154px; 
+  height:48px; 
+  margin-right:10px;
+}
+</style>
